@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Exam Registration</title>
+</head>
+<body>
+
+  <header>
+    <h1>Student Exam Registration Form</h1>
+  </header>
+
+  <main>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="email">Email ID:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Contact Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Academic Information</legend>
+
+        <label for="course">Course:</label><br>
+        <input type="text" id="course" name="course" placeholder="e.g., B.Tech, B.Sc" required><br><br>
+
+        <label for="rollno">Roll Number:</label><br>
+        <input type="text" id="rollno" name="rollno" required><br><br>
+
+        <label for="exam-type">Exam Type:</label><br>
+        <select id="exam-type" name="exam-type" required>
+          <option value="">--Select--</option>
+          <option value="midterm">Mid Term</option>
+          <option value="semester">Semester</option>
+          <option value="backpaper">Back Paper</option>
+        </select><br><br>
+
+        <label>Subjects:</label><br>
+        <input type="checkbox" id="math" name="subject" value="Mathematics">
+        <label for="math">Mathematics</label><br>
+
+        <input type="checkbox" id="physics" name="subject" value="Physics">
+        <label for="physics">Physics</label><br>
+
+        <input type="checkbox" id="chemistry" name="subject" value="Chemistry">
+        <label for="chemistry">Chemistry</label><br>
+
+        <input type="checkbox" id="english" name="subject" value="English">
+        <label for="english">English</label><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Declaration</legend>
+        <input type="checkbox" id="declaration" name="declaration" required>
+        <label for="declaration">I confirm that the information provided above is true.</label><br><br>
+      </fieldset>
+
+      <input type="submit" value="Submit Registration">
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Exam Registration Portal</p>
+  </footer>
+
+</body>
+</html>
